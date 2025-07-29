@@ -94,7 +94,7 @@
 
 </script>
 
-  
+
 
   <div style="border-radius: 8px; box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px; margin: 1em auto; max-width: 320px; overflow: hidden;">
 
@@ -106,19 +106,19 @@
 
 </div>
 
-  
+
 <div style="text-align: center;">
 
 <a class="btn-slide2" data-path="(6#Year/Month/MovieCode).html">
 
-<span class="circle2"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.--><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zM368 424a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg></span>
+<span class="circle2"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.--><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zM432 456c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"></path></svg></span><span class="title2">ကြည့်ရန်</span>
 
   <span class="title-hover2">Coming!!!</span>
 </a>
 </div>
 <style>
 
-.btn-slide2 span.circle2,.btn-slide2:hover{background-color:#C20F08}.btn-slide2{position:relative;display:inline-block;height:50px;width:200px;line-height:50px;padding:0;border-radius:50px;background:#fdfdfd;margin:10px;transition:.5s;border:2px solid #D10700;fill:black}.btn-slide2 svg{fill:white; width:22px; height:22px; margin-left:8px;}.btn-slide2:hover span.circle2{left:100%;margin-left:-45px;background-color:rgb(0 0 0 / 20%);color:#C20F08}.btn-slide2:hover span.title2{left:40px;opacity:0}.btn-slide2:hover span.title-hover2{opacity:1;left:40px}.btn-slide2 span{position:absolute;height:100%;width:100%;line-height:50px;font-size:18px;color:#C20F08;font-weight:bold;transition:.5s}.btn-slide2 span.title-hover2{left:-100px;opacity:0}.btn-slide2 span.circle2{left:0;width:50px;background-color:rgb(0 0 0 / 20%);border-radius:50px}.btn-slide2 span.title2{right:0;width:150px}
+.btn-slide2 span.circle2,.btn-slide2:hover{background-color:#C20F08}.btn-slide2{position:relative;display:inline-block;height:50px;width:200px;line-height:50px;padding:0;border-radius:50px;background:#fdfdfd;margin:10px;transition:.5s;border:2px solid #D10700;fill:black}.btn-slide2 svg{fill:white; width:22px; height:22px; margin-left:8px;}.btn-slide2:hover span.circle2{left:100%;margin-left:-45px;background-color:rgb(0 0 0 / 20%);color:#C20F08}.btn-slide2:hover span.title2{left:40px;opacity:0}.btn-slide2:hover span.title-hover2{opacity:1;left:40px}.btn-slide2 span.circle2{display:block;color:#fff;position:absolute;float:left;margin:4px;line-height:48px;height:40px;width:40px;top:0;left:0;transition:.5s;border-radius:50%}.btn-slide2 span.title-hover2,.btn-slide2 span.title2{position:absolute;text-align:center;margin:0 auto;font-size:16px;font-weight:700;transition:.5s;color:#C20F08;left:80px}.btn-slide2 span.title-hover2{left:80px;opacity:0;color:#fff}
 
 </style><div class="separator" style="clear: both; text-align: center;"><br /></div><div class="separator" style="clear: both;"><br /></div></div>
 
@@ -130,7 +130,9 @@ const blogUrl = "https://bhubads.blogspot.com";
 
 const randomContainer = document.getElementById("random-posts");
 
-fetch(`${blogUrl}/feeds/posts/default?alt=json&max-results=50`)
+fetch(
+${blogUrl}/feeds/posts/default?alt=json&max-results=50
+)
 
   .then(res => res.json())
 
@@ -154,7 +156,8 @@ fetch(`${blogUrl}/feeds/posts/default?alt=json&max-results=50`)
 
       }
 
-      const postHTML = `
+      const postHTML =
+
 
         <a href="${link}" target="_blank" style="display:inline-block; min-width:160px; max-width:160px; background:#111; border-radius:6px; overflow:hidden; color:white; text-decoration:none;">
 
@@ -163,7 +166,7 @@ fetch(`${blogUrl}/feeds/posts/default?alt=json&max-results=50`)
           <div style="padding:8px; font-size:13px;">🎬 ${title}</div>
 
         </a>
-      `;
+;
 
       randomContainer.insertAdjacentHTML("beforeend", postHTML);
 
