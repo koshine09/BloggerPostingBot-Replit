@@ -4,7 +4,7 @@ modules = ["python-3.11"]
 channel = "stable-25_05"
 
 [workflows]
-runButton = "Project"
+runButton = "Start Bot"
 
 [[workflows.workflow]]
 name = "Project"
@@ -22,6 +22,15 @@ author = "agent"
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "pip install python-telegram-bot google-api-python-client google-auth-httplib2 google-auth-oauthlib && python main.py"
+
+[[workflows.workflow]]
+name = "Start Bot"
+author = 45704528
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python main.py"
 
 [[ports]]
 localPort = 8080
