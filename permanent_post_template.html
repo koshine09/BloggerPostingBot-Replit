@@ -1,0 +1,224 @@
+<div class="separator" style="clear: both;">
+
+  <div style="display: inline-block; position: relative;">
+
+    <img alt="Poster" border="0" height="300" src="https://ia801409.us.archive.org/0/items/mmsub_thumb/(1#Poster).jpg" />
+
+    <div class="rating-badge" style="align-items: center; background: rgba(0, 0, 0, 0.75); border-radius: 4px; color: gold; display: flex; font-size: 14px; font-weight: bold; gap: 4px; padding: 4px 8px; position: absolute; right: 8px; top: 8px;">
+
+      ⭐️(2#Rating)
+
+    </div>
+
+  </div>
+
+</div><div><br /></div><div><br /></div>
+
+(3#MovieReview)
+
+<div><br /></div><div><br /> 
+
+<div id="scroll-container" style="overflow-x: auto; white-space: nowrap; display: flex; gap: 10px; scroll-behavior: smooth; -webkit-overflow-scrolling: touch;">
+
+  <img src="https://ia801409.us.archive.org/0/items/mmsub_thumb/(4#Scene1).jpg"
+
+       style="max-height: 190px; width: auto; border-radius: 6px; object-fit: contain;" />
+
+  <img src="https://ia801409.us.archive.org/0/items/mmsub_thumb/(4#Scene2).jpg"
+
+       style="max-height: 190px; width: auto; border-radius: 6px; object-fit: contain;" />
+
+  <img src="https://ia801409.us.archive.org/0/items/mmsub_thumb/(4#Scene3).jpg"
+
+       style="max-height: 190px; width: auto; border-radius: 6px; object-fit: contain;" />
+
+  <img src="https://ia801409.us.archive.org/0/items/mmsub_thumb/(4#Scene4).jpg"
+
+       style="max-height: 190px; width: auto; border-radius: 6px; object-fit: contain;" />
+
+</div>
+
+<script>
+
+  const container = document.getElementById('scroll-container');
+
+  let scrollSpeed = 0.5; // smooth speed for mobile
+
+  let isUserInteracting = false;
+
+  let interactionTimeout;
+
+  function autoScroll() {
+
+    if (!isUserInteracting) {
+
+      container.scrollLeft += scrollSpeed;
+
+      if (container.scrollLeft + container.offsetWidth >= container.scrollWidth - 1) {
+
+        container.scrollLeft = 0; // reset to start
+
+      }
+
+    }
+
+    requestAnimationFrame(autoScroll);
+
+  }
+
+  function pauseScrollTemporarily() {
+
+    isUserInteracting = true;
+
+    clearTimeout(interactionTimeout);
+
+    interactionTimeout = setTimeout(() => {
+
+      isUserInteracting = false;
+
+    }, 2500); // resume after 2.5s idle
+
+  }
+
+  // Detect interaction (mouse or touch)
+
+  container.addEventListener('touchstart', pauseScrollTemporarily, { passive: true });
+
+  container.addEventListener('touchmove', pauseScrollTemporarily, { passive: true });
+
+  container.addEventListener('wheel', pauseScrollTemporarily, { passive: true });
+
+  container.addEventListener('mousedown', pauseScrollTemporarily);
+
+  requestAnimationFrame(autoScroll);
+
+</script>
+
+  
+
+  <div style="border-radius: 8px; box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px; margin: 1em auto; max-width: 320px; overflow: hidden;">
+
+  <div style="height: 0px; padding-bottom: 56.25%; position: relative;">
+
+    <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" src="(5#YoutubeEmbedLink)" style="height: 100%; left: 0; position: absolute; top: 0; width: 100%;" title="YouTube video player"></iframe>
+
+  </div>
+
+</div>
+
+  
+<div style="text-align: center;">
+
+<a class="btn-slide2" data-path="(6#Year/Month/MovieCode).html">
+
+<span class="circle2"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.--><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zM368 424a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg></span>
+
+  <span class="title-hover2">Coming!!!</span>
+</a>
+</div>
+<style>
+
+.btn-slide2 span.circle2,.btn-slide2:hover{background-color:#C20F08}.btn-slide2{position:relative;display:inline-block;height:50px;width:200px;line-height:50px;padding:0;border-radius:50px;background:#fdfdfd;margin:10px;transition:.5s;border:2px solid #D10700;fill:black}.btn-slide2 svg{fill:white; width:22px; height:22px; margin-left:8px;}.btn-slide2:hover span.circle2{left:100%;margin-left:-45px;background-color:rgb(0 0 0 / 20%);color:#C20F08}.btn-slide2:hover span.title2{left:40px;opacity:0}.btn-slide2:hover span.title-hover2{opacity:1;left:40px}.btn-slide2 span{position:absolute;height:100%;width:100%;line-height:50px;font-size:18px;color:#C20F08;font-weight:bold;transition:.5s}.btn-slide2 span.title-hover2{left:-100px;opacity:0}.btn-slide2 span.circle2{left:0;width:50px;background-color:rgb(0 0 0 / 20%);border-radius:50px}.btn-slide2 span.title2{right:0;width:150px}
+
+</style><div class="separator" style="clear: both; text-align: center;"><br /></div><div class="separator" style="clear: both;"><br /></div></div>
+
+<div id="random-posts" style="overflow-x: auto; white-space: nowrap; display: flex; gap: 12px; scroll-behavior: smooth; padding: 1em 0; -webkit-overflow-scrolling: touch;"></div>
+
+<script>
+
+const blogUrl = "https://bhubads.blogspot.com";
+
+const randomContainer = document.getElementById("random-posts");
+
+fetch(`${blogUrl}/feeds/posts/default?alt=json&max-results=50`)
+
+  .then(res => res.json())
+
+  .then(data => {
+
+    const posts = data.feed.entry || [];
+
+    const randomPosts = posts.sort(() => 0.5 - Math.random()).slice(0, 10);
+
+    randomPosts.forEach(post => {
+
+      const title = post.title.$t;
+
+      const link = post.link.find(l => l.rel === "alternate").href;
+
+      let thumbnail = "https://via.placeholder.com/160x90?text=No+Image";
+
+      if (post.media$thumbnail) {
+
+        thumbnail = post.media$thumbnail.url.replace("/s72-c", "/s160");
+
+      }
+
+      const postHTML = `
+
+        <a href="${link}" target="_blank" style="display:inline-block; min-width:160px; max-width:160px; background:#111; border-radius:6px; overflow:hidden; color:white; text-decoration:none;">
+
+          <img src="${thumbnail}" style="width:100%; height:auto;" alt="${title}">
+
+          <div style="padding:8px; font-size:13px;">🎬 ${title}</div>
+
+        </a>
+      `;
+
+      randomContainer.insertAdjacentHTML("beforeend", postHTML);
+
+    });
+
+  });
+
+</script>
+
+<script>
+
+  const randomScroll = document.getElementById('random-posts');
+
+  let scrollSpeed = 0.6;
+
+  let userScrolling = false;
+
+  let resumeTimer;
+
+  function autoScrollRandom() {
+
+    if (!userScrolling) {
+
+      randomScroll.scrollLeft += scrollSpeed;
+
+      if (randomScroll.scrollLeft + randomScroll.offsetWidth >= randomScroll.scrollWidth - 1) {
+
+        randomScroll.scrollLeft = 0;
+
+      }
+
+    }
+
+    requestAnimationFrame(autoScrollRandom);
+
+  }
+
+  function pauseRandomScroll() {
+
+    userScrolling = true;
+
+    clearTimeout(resumeTimer);
+
+    resumeTimer = setTimeout(() => userScrolling = false, 2500);
+
+  }
+
+  randomScroll.addEventListener('touchstart', pauseRandomScroll, { passive: true });
+
+  randomScroll.addEventListener('touchmove', pauseRandomScroll, { passive: true });
+
+  randomScroll.addEventListener('wheel', pauseRandomScroll, { passive: true });
+
+  randomScroll.addEventListener('mousedown', pauseRandomScroll);
+
+  requestAnimationFrame(autoScrollRandom);
+
+</script>
